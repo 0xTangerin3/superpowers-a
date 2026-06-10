@@ -1,0 +1,88 @@
+[
+  {
+    "prompt": "What does this pasted error mean?",
+    "expectedDepth": 0,
+    "expectedApproval": false
+  },
+  {
+    "prompt": "Did you create .env?",
+    "expectedDepth": 0,
+    "expectedApproval": false
+  },
+  {
+    "prompt": "Can you open this file?",
+    "expectedDepth": 0,
+    "expectedApproval": false
+  },
+  {
+    "prompt": "Add this API key to ignored local .env without printing it.",
+    "expectedDepth": 1,
+    "expectedApproval": false
+  },
+  {
+    "prompt": "Check whether local endpoint returns 200.",
+    "expectedDepth": 1,
+    "expectedApproval": false
+  },
+  {
+    "prompt": "Fix the typo on line 42.",
+    "expectedDepth": 1,
+    "expectedApproval": false
+  },
+  {
+    "prompt": "Patch one docs file with this decision.",
+    "expectedDepth": 2,
+    "expectedApproval": false
+  },
+  {
+    "prompt": "Add a small CLI flag with tests.",
+    "expectedDepth": 2,
+    "expectedApproval": false
+  },
+  {
+    "prompt": "Fix one bug with known cause.",
+    "expectedDepth": 2,
+    "expectedApproval": false
+  },
+  {
+    "prompt": "Change skill routing behavior.",
+    "expectedDepth": 3,
+    "expectedApproval": false
+  },
+  {
+    "prompt": "Patch the prompt hook classifier.",
+    "expectedDepth": 3,
+    "expectedApproval": false
+  },
+  {
+    "prompt": "Review my code before merge.",
+    "expectedDepth": 3,
+    "expectedApproval": false,
+    "expectedSkill": "requesting-code-review"
+  },
+  {
+    "prompt": "Enable live licensed Reuters ingest.",
+    "expectedDepth": 4,
+    "expectedApproval": true
+  },
+  {
+    "prompt": "Store licensed article bodies.",
+    "expectedDepth": 4,
+    "expectedApproval": true
+  },
+  {
+    "prompt": "Run real backtest using paid market data.",
+    "expectedDepth": 4,
+    "expectedApproval": true
+  },
+  {
+    "prompt": "Change trading recommendation behavior.",
+    "expectedDepth": 4,
+    "expectedApproval": true
+  },
+  {
+    "prompt": "Show me the production API key.",
+    "expectedDepth": 4,
+    "expectedApproval": true
+  }
+]

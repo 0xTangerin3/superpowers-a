@@ -1,0 +1,36 @@
+{
+  "name": "superpower-a",
+  "version": "0.1.0",
+  "description": "Adaptive Superpowers router with a risk-weighted planning depth gate.",
+  "author": {
+    "name": "Superpower-A contributors"
+  },
+  "homepage": "https://github.com/0xTangerin3/superpowers-a",
+  "repository": "https://github.com/0xTangerin3/superpowers-a",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "routing",
+    "planning",
+    "tdd",
+    "debugging",
+    "code-review",
+    "hooks",
+    "superpowers"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Superpower-A (Adaptive)",
+    "developerName": "Superpower-A contributors",
+    "category": "Productivity",
+    "shortDescription": "Adaptive workflow routing with depth 0-4 risk gates",
+    "longDescription": "Adaptive Superpowers routing that preserves verification discipline for risky engineering work while skipping workflow ceremony for simple questions, status checks, file opens, and tiny local actions.",
+    "defaultPrompt": "Use adaptive workflow routing with the Planning Depth Gate. Keep low-risk tasks terse and escalate only when scope, risk, unknowns, blast radius, or reversibility justify more process.",
+    "capabilities": [
+      "Planning depth classification",
+      "Adaptive skill routing",
+      "Verification discipline",
+      "Low-overhead simple-task handling"
+    ]
+  }
+}

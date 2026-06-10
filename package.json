@@ -1,0 +1,10 @@
+{
+  "name": "superpower-a",
+  "version": "0.1.0",
+  "description": "Adaptive Superpowers router with a risk-weighted planning depth gate.",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node tests/test_planning_depth_gate.js && node tests/test_skill_activator.js"
+  }
+}

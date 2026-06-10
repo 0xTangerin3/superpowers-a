@@ -1,0 +1,23 @@
+[
+  {
+    "prompt": "Patch one docs file with this decision.",
+    "mode": "fast",
+    "expectedDepth": 1
+  },
+  {
+    "prompt": "Patch one docs file with this decision.",
+    "mode": "strict",
+    "expectedDepth": 3
+  },
+  {
+    "prompt": "Enable live licensed Reuters ingest.",
+    "mode": "fast",
+    "expectedDepth": 4,
+    "expectedApproval": true
+  },
+  {
+    "prompt": "Can you open this file?",
+    "mode": "audit",
+    "expectedDepth": 0
+  }
+]

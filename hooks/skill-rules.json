@@ -1,0 +1,68 @@
+{
+  "rules": [
+    {
+      "skill": "systematic-debugging",
+      "priority": "critical",
+      "keywords": ["bug", "error", "broken", "failing", "fails", "failure", "stack trace", "traceback"],
+      "intentPatterns": [
+        "investigate\\s+this\\s+failing\\s+test",
+        "fix\\s+(this|the|a)\\s+(bug|error|issue|failing\\s+test)",
+        "why\\s+(is|does|did).*(fail|error|broken|not\\s+work)"
+      ]
+    },
+    {
+      "skill": "test-driven-development",
+      "priority": "critical",
+      "keywords": ["tdd", "test first", "tests first", "write tests", "failing test", "unit test"],
+      "intentPatterns": [
+        "write\\s+tests?\\s+for",
+        "add\\s+(a\\s+)?tests?",
+        "test\\s+(this|that|for)"
+      ]
+    },
+    {
+      "skill": "verification-before-completion",
+      "priority": "critical",
+      "keywords": ["verify everything", "all done", "ready to merge", "ship it"],
+      "intentPatterns": [
+        "ready\\s+(to|for)\\s+(merge|ship|deploy)",
+        "verify\\s+(everything|this)"
+      ]
+    },
+    {
+      "skill": "requesting-code-review",
+      "priority": "high",
+      "keywords": ["code review", "review my code", "security review", "pull request", "before merge"],
+      "intentPatterns": [
+        "review\\s+(my|the|this)\\s+(code|implementation|changes|diff|pr)",
+        "before\\s+(merge|shipping|deploy)"
+      ]
+    },
+    {
+      "skill": "writing-plans",
+      "priority": "high",
+      "keywords": ["write a plan", "implementation plan", "break this down"],
+      "intentPatterns": [
+        "(write|create|make)\\s+(a\\s+)?plan",
+        "break\\s+(this|it)\\s+down"
+      ]
+    },
+    {
+      "skill": "executing-plans",
+      "priority": "high",
+      "keywords": ["execute the plan", "follow the plan", "implement the plan"],
+      "intentPatterns": [
+        "(execute|follow|implement)\\s+(the|this)\\s+plan"
+      ]
+    },
+    {
+      "skill": "using-git-worktrees",
+      "priority": "medium",
+      "keywords": ["worktree", "isolated branch", "isolate this work"],
+      "intentPatterns": [
+        "use\\s+(a\\s+)?worktree",
+        "isolate\\s+(this|the)\\s+work"
+      ]
+    }
+  ]
+}
