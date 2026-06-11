@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "superpower-a",
+  "displayName": "Superpower-A",
+  "version": "0.1.0",
+  "description": "Adaptive workflow routing for Claude Code with risk-weighted planning depth gates.",
+  "author": {
+    "name": "Superpower-A contributors",
+    "url": "https://github.com/0xTangerin3"
+  },
+  "homepage": "https://github.com/0xTangerin3/superpowers-a",
+  "repository": "https://github.com/0xTangerin3/superpowers-a",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "skills",
+    "routing",
+    "planning",
+    "hooks",
+    "superpowers"
+  ],
+  "skills": "./skills/"
+}

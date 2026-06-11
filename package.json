@@ -5,6 +5,6 @@
   "license": "MIT",
   "type": "commonjs",
   "scripts": {
-    "test": "node tests/test_planning_depth_gate.js && node tests/test_skill_activator.js"
+    "test": "node tests/test_planning_depth_gate.js && node tests/test_skill_activator.js && node tests/test_plugin_manifests.js"
   }
 }

@@ -1,6 +1,6 @@
 # Superpower-A
 
-Adaptive workflow routing for Codex-style Superpowers.
+Adaptive workflow routing for Claude Code and Codex-style Superpowers.
 
 Superpower-A helps an AI coding agent choose the smallest useful workflow for each request. It keeps simple questions and one-command checks lightweight, while preserving explicit review, verification, and human approval for work that carries real risk.
 
@@ -44,6 +44,8 @@ The gate scores five practical dimensions:
 
 | Path | Purpose |
 | --- | --- |
+| `.claude-plugin/plugin.json` | Claude Code plugin manifest. |
+| `.codex-plugin/plugin.json` | Codex plugin manifest. |
 | `hooks/planning-depth-gate.js` | Deterministic prompt classifier. |
 | `hooks/skill-activator.js` | Hook response builder for adaptive routing context. |
 | `hooks/skill-rules.json` | Skill matching rules used by the classifier. |
@@ -73,6 +75,31 @@ node hooks/planning-depth-gate.js "Show me the production API key"
 ```
 
 The second example is intentionally risky: depth `4` requires explicit approval before any sensitive action.
+
+## Claude Code
+
+This repository can be loaded as a Claude Code plugin because it includes a `.claude-plugin/plugin.json` manifest and shared `skills/` directory.
+
+For local development:
+
+```bash
+claude --plugin-dir .
+```
+
+Inside Claude Code, invoke the packaged skills with the plugin namespace:
+
+```text
+/superpower-a:planning-depth-gate
+/superpower-a:using-superpowers
+```
+
+To install it into your personal Claude Code skills directory:
+
+```bash
+git clone https://github.com/0xTangerin3/superpowers-a ~/.claude/skills/superpower-a
+```
+
+Then start Claude Code from any project and run `/reload-plugins` if the session is already open.
 
 ## Example Output
 
